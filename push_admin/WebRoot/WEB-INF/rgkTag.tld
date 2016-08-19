@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>     
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"       
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"       
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee       
+				http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" version="2.0">     
+
+		<tlib-version>1.0</tlib-version>     
+		<short-name>rgk</short-name>   
+		<uri>rgk://com.push.admin.tags/RgkTag</uri>
+		  
+		<function>     
+       		<description>check object is contained in list</description>     
+       		<name>contains</name>     
+       		<function-class>com.push.admin.tags.RgkTag</function-class>     
+       		<function-signature>     
+           		boolean contains(java.util.List,java.lang.Object)      
+       		</function-signature>     
+       		<example>${rgk:contains(permissions,"admin")}</example>     
+		</function>  
+		
+		<function>     
+       		<description>get list size</description>     
+       		<name>len</name>     
+       		<function-class>com.push.admin.tags.RgkTag</function-class>     
+       		<function-signature>     
+           		int len(java.util.List)      
+       		</function-signature>     
+       		<example>${rgk:len(permissions)>0}</example>     
+		</function>
+		
+</taglib>
